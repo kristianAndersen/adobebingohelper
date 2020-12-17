@@ -29,6 +29,11 @@ function bp1(inputValue){
         
         for(j=0;j<tdl1;j++){
             let td1 = tr1.getElementsByTagName("td")[j];
+
+            td1.addEventListener("click", function(e) {
+                e.target.className -= " yes";
+            });
+
             console.log(td1.innerHTML+'=='+inputValue)
             if(td1.innerHTML===inputValue){
              
